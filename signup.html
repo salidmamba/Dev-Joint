@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+         <h1>signup</h1>
+    </header>
+    
+    <div class="bordersign">
+        <form class="user">
+            <label for="username"> Enter a username:</label><br>
+            <input type="text" id="username" name="username" placeholder="username" required><br><br> <!--include the 'name' variable for backend developers accessibilty... "required" to make it necessary for users to fil before proceding-->
+            <label for="email">Enter your email address:</label><br>
+            <input type="email" id="email" name="email" placeholder="@email.com" required><br><br>
+            <label for="password"> Enter password:</label><br>
+            <input type="password" id="password" name="password" placeholder="password" required><br><br>
+            <label for="phone-number"> Enter phone contact:</label><br>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="phone number" required><br>
+
+            <p>Select age:</p>
+            <input type="radio" name="age" value="0-25" id="option1"> <!--"value" was included for the likes of data analysis-->
+            <label for="option1"> 0-25</label>
+            <input type="radio" name="age" value="26-49" id="option2">
+            <label for="option2"> 26-49</label>
+            <input type="radio" name="age" value="50+" id="option3">
+            <label for="option3">  Above 50</label><br><br>
+
+            <label for="question">Select security qeustion</label>
+            <select name="question" id="qeustion">
+                <option value="q1">What is your favourite football team?</option>
+                <option value="q2">What are you allergic to?</option>
+                <option value="q3">In what year did you get your first car?</option>
+                <option value="q4">How old were you when you began coding?</option>
+            </select><br><br>
+
+            <label for="answer">Input answer to selected security question?</label><br>
+            <input type="text" name="answer" id="answer">
+            <br><br>
+            <label for="bio">Your Bio:</label><br>
+            <textarea name="bio" id="bio" cols="58.9" rows="7" placeholder="about you..."></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    
+</body>
+</html>
