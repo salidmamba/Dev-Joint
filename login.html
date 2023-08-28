@@ -6,8 +6,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Login</h1>
+    <style>
+        body{
+            background-color: #ccc;
+        }
+    </style>
+    <header>
+        <h1>Dev Joint</h1>
+    </header><br><br>
+
     <div class="login">
+        <p class="lg">Signin</p><br><br>
+
         <form class="login_input">
             <label for="username/email">Enter your registered username or email:</label><br>
             <input type="text" type="email" id="username/email" name="username" placeholder="username/@email.com" required><br><br>
@@ -15,10 +25,18 @@
             <input type="password" id="password" name="password" placeholder="*******" required><br><br>
             <input type="submit" value="Login">
         </form>
-        <a href="forgot_password.html">Forgot password?</a>
+        <a class="fp" href="forgot_password.html">Forgot password?</a>
+
+        <section class="yet">
+            <p>Don't have an account yet? click <a href="signup.html"> <em>Here</em></a> to register.</p>
+        </section>
+
+        <img class="focus" src="img/focused.png" alt="focus">
     </div>
-    <section>
-        <p>Don't have an account yet? click <a href="signup.html"> <em>Here</em></a> to register.</p>
-    </section>
+
+    <footer>
+        <p class="copyright"> Copyright 2023 Devjoint.</p>
+    </footer>
+    
 </body>
 </html>
